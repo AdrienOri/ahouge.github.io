@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>My research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1 id="myname"><a href="index.html">Adrien Houge</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="CV.html">CV</a></li>
+											<li><a href="Research.html">My research</a></li>
+											<li><a href="ScienceDesign.html">Science design</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2 id="chapter">My research</h2>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner" id="research">
+								<h2>Overview</h2>
+								<p>
+									My research is driven by the understanding of how tiny dust grains coagulate into planetesimals in protoplanetary discs. I am particularly focused on studying the evolution of their properties (e.g. size, composition, porosity) as these may alter where planets ultimately form, and what chemical reservoir they may harbour. While my PhD is primarly focused on using theory and numerical simulations, I have actively tried to connect on the different aspects of dust evolution, namely the experimental and the observational aspects.
+								</p>								
+
+								<p>
+									In the last years, I have been mostly focused on understanding the impact of accretion outbursts on dust evolution, and how we may use outbursting systems as laboratory to constrain the structure of planetary building blocks. More recently, thanks to the exceptional progress in disc observation with ALMA Band 9 and JWST, my research has expended on the transport of icy pebbles through the water snowline.
+								</p>
+
+								<p>You will find here some highlights about past and ongoing research projects.</p>
+								
+								<hr />
+
+							</div>
+						</section>
+						<section class="spotlight-r" id="firstone">
+							<!-- <div class="image"><img src="images/pic01.jpg" alt="" /></div> -->
+							<div class="image3"><img src="images/dustcoag.svg" alt="" /></div>
+							<div class="content3">
+								<h4> Dust coagulation, the onset of planet formation </h4>
+								<p>The first stage of planet formation, known as dust coagulation, involves the growth of tiny dust grains through collisions at low velocities. The collisional evolution of dust is highly complex, with dust of varying shapes, sizes, and compositions all influencing the outcome of each collision. Throughout my PhD, in collaboration with my supervisor <a class="outlined_link" href="https://www.skrijt.com/" target="_blank">Sebastiaan Krijt</a>, I developed expertise in utilizing the two most widely used statistical methods to study dust coagulation:</p>
+								<ul> 
+									<li>The <strong class="outlined_word">Monte Carlo approach</strong>, for which I developed my implementation of the algorithm based on the representative particle approach. This implementation encompasses various processes, such as the porous structure, self-compaction, erosion, fragmentation, and sublimation/condensation following intense heating events. Further details can be found in my <a class="outlined_link" href="https://academic.oup.com/mnras/article/521/4/5826/7084028" target="_blank">first paper</a>.</li>
+									<br />
+									<li>The <strong class="outlined_word">Smoluchowski approach</strong>, which allows us to simulaneously follow the growth and the radial transport of dust particles. In this context, I employed the <a class="outlined_link" href="https://stammler.github.io/dustpy/" target="_blank">DustPy package</a>, brilliantly designed by Sebastian Stammler. Information about how I adapted DustPy for my research can be found in my second paper (submitted).</li>
+								</ul>
+
+							</div>
+						</section>
+						<section class="spotlight-r">
+							<!-- <div class="image"><img src="images/pic01.jpg" alt="" /></div> -->
+							<div class="image3"><img src="images/V883_band7.svg" alt="" /></div>
+							<div class="content3">
+								<h4> Dust evolution in outbursting discs </h4>
+								<p>Protoplanetary discs are expected to undergo frequent accretion outbursts, during which the temperature of the dust and gas increase by several factors, pushing snowlines outwards and driving the sublimation of ice species on large scales. In my <a class="outlined_link" href="https://academic.oup.com/mnras/article/521/4/5826/7084028" target="_blank">first paper</a>, I demonstrated that these events may significantly alter the evolution of dust particles and the formation of planetesimals, depending on how icy dust aggregates respond to the sublimation of their ice mantles at the onset of accretion outbursts.</p>
+								
+								<p>Indeed, the impact of ice sublimation on the structure of dust particles remained unclear, as laboratory experiments indicated that they could either survive or disintegrate completely. My second paper (submitted to MNRAS) focused on addressing this question. I conducted a multi-wavelength analysis of archival high-resolution ALMA observations from V883 Ori, a disk currently undergoing a powerful accretion outburst. By deriving spectral indices and comparing them with one-dimensional dust evolution simulations (using DustPy), I determined that dust aggregates must survive the sublimation of their ice mantles. This second paper was written during an 8-month visit at the European Southern Observatory headquarters, where I had the opportunity to work with interferometric data for the first time under supervision of <a class="outlined_link" href="https://sites.google.com/view/emacias/home?authuser=0" target="_blank">Enrique Macías</a>.</p>
+							</div>
+						</section>
+						<section class="spotlight-r">
+							<!-- <div class="image"><img src="images/pic01.jpg" alt="" /></div> -->
+							<div class="image3"><img src="images/snowline_transport.svg" alt="" /></div>
+							<div class="content3">
+								<h4> Dust transport through the water snowline </h4>
+								<p>The water snowline is considered to be a sweet spot for the formation of planetesimals, due to its potential impact on the properties of dust grains. I have always been fascinated by the water snowline, but it used to be unaccessible to current observatories (except in outbursting system). However, there has been formidable progress in that field in the last few years. I am now working on two projects focusing on the water snowline:</p>
+
+
+								<ul> 
+									<li>The Band 9 of ALMA offers some of the telescope's highest spatial resolution. Recently, I got the opportunity to collaborate on such dataset of HL Tau, resolving the continuum emissions down to 1 au. We aim at determining how the properties of dust particles are modified when crossing the water snowline, which may have consequences on whether or not this location is a sweet spot for planet formation.</li>
+									<br />
+									<li>
+										Simultaneously, I became a part of the <a class="outlined_link" href="https://csalyk.github.io/jdiscs/index.html" target="_blank">JDISCS team</a>, which employs JWST data to characterize the chemical diversity of planet-forming regions. Building upon the recent and remarkable spectra obtained by <a class="outlined_link" href="https://arxiv.org/abs/2307.03846" target="_blank">A. Banzatti and collaborators</a>, my current focus involves investigating how observations of water vapor in the inner regions of protoplanetary discs can serve as an indicator of their pebble drift history.</li>
+								</ul>
+
+							</div>
+						</section>
+						<section class="spotlight-r">
+							<!-- <div class="image"><img src="images/pic01.jpg" alt="" /></div> -->
+							<div class="image3"><img src="images/texus56.svg" alt="" /></div>
+							<div class="content3">
+								<h4> Porous growth - Bridging simulations and experiments </h4>
+								<p>It is often assumed that dust particles are compact spheres, as this drastically simplifies calculations, particularly for opacity computations. However, laboratory experiments have shown for many years that dust aggregates can develop a highly porous structure, which can influence their aerodynamic behavior, resistance to fragmentation, and opacities. The latter has a significant impact, particularly on predictions of disc dust mass from observational data.</p>
+
+								<p>Utilizing my implementation of the Monte Carlo coagulation approach, I collaborated with members of the <a class="outlined_link" href="https://ui.adsabs.harvard.edu/abs/2022EPSC...16..951V/abstract" target="_blank">ICAPS team</a> (PI: J. Blum), whose experiments were conducted aboard a TEXUS-56 rocket to study the porous growth of aggregates in the Brownian regime. I adapted my algorithm to match their physical conditions and explored a variety of processes to analyze their data, including reducing the volume of the dust cloud, tracking the distribution of electric charge, and adding the Coulombian repulsion.</p>
+
+							</div>
+						</section>
+						<section class="spotlight-r">
+							<!-- <div class="image"><img src="images/pic01.jpg" alt="" /></div> -->
+							<div class="image3"><img src="images/trappist1.svg" alt="" /></div>
+							<div class="content3">
+								<h4> TRAPPIST-1: the transit timings of seven wonders </h4>
+								<p>During my master's program, I had the incredible opportunity to collaborate with Dr. Michael Gillon and Dr. Elsa Ducrot on transits of the TRAPPIST-1 planets, using data acquired from SPECULOOS-Io. My goal was to reduce and analyze the transit data of the seven planets taken in 2019, focusing on extracting the precise transit timings, which in turn can be used to constrain the masses and internal densities of these planets with the TTV method. Being immersed in the team that initially discovered that remarkable system was a fantastic scientific experience. You can find my <a class="outlined_link" href="https://matheo.uliege.be/handle/2268.2/9196?locale=en" target="_blank">master thesis on that link</a>. </p>
+
+								<p>From that work, my passion for scientific research was ignited. I also realised how difficult it is to constrain the structure and composition of exoplanets, even using more than 400 transit measurements. Today I am convinced that exoplanet study should be paired with predictions and progresses in the field of planet formation in protoplanetary discs.</p>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy Adrien Houge</li><li>Background: NASA/JPL-Caltech</li><li>Initial design based on: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
