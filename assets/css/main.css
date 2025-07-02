@@ -181,6 +181,12 @@ input, select, textarea {
 		line-height: 1.75em;
 	}
 
+	.content .h2
+	{
+		font-size: 3.75em;
+		line-height: 1.75em;
+	}
+
 		@media screen and (max-width: 736px) {
 
 			h2 {
@@ -2691,14 +2697,34 @@ input, select, textarea {
 			vertical-align: middle;
 		}
 
+
+		.spotlight .contact-icon {
+			width: 24px;     /* Or 20px, depending on your design */
+			height: 24px;
+			display: inline-block;
+			vertical-align: middle;
+		  }
+		.spotlight .orcid-icon {
+		width: 24px;     /* Or 20px, depending on your design */
+		height: 24px;
+		display: inline-block;
+		vertical-align: middle;
+		}
+		.spotlight .map-icon {
+		width: 24px;     /* Or 20px, depending on your design */
+		height: 24px;
+		display: inline-block;
+		vertical-align: middle;
+		}
+
 		.spotlight .content {
 			padding: 2em 4em 0.1em 4em ;
 			-moz-order: 2;
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
-			max-width: 48em;
-			width: 60%;
+			max-width: 54em;
+			width: 55%;
 		}		
 		
 		.spotlight .content2 {
@@ -4325,3 +4351,109 @@ body.is-preload #banner:after {
 #research.inner{
 	padding-bottom: 0%;
 }
+
+
+/* My stuff */
+
+/* Timeline */
+
+.timeline {
+	position: relative;
+	margin-left: 40px;
+	border-left: 2px solid #ccc;
+	padding-left: 34px;
+}
+
+.timeline-entry {
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.timeline-entry::before {
+	content: '';
+	position: absolute;
+	left: -41px;
+	top: 5px;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 2px solid #ccc;
+}
+
+.date {
+	font-size: 15px;
+	color: #888;
+	margin-bottom: 5px;
+}
+
+.institution {
+	font-size: 16px;
+	font-weight: bold;
+	color: #089CAF;
+	margin-bottom: 5px;
+}
+
+.degree {
+	font-size: 15px;
+	color: #888;
+	margin-bottom: 5px;
+}
+
+.thesis {
+	font-size: 14px;
+	color: #888;
+}
+
+
+  .conferences {
+	max-width: 100%;
+	margin: auto;
+  }
+  
+  .section-number {
+	font-size: 28px;
+	font-weight: 300;
+	display: inline-block;
+	border-left: 2px solid black;
+	padding-left: 10px;
+	margin-right: 10px;
+	vertical-align: middle;
+  }
+  
+  .section-title {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  }
+  
+  .conference-list {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+  }
+  
+  .conference-entry {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	column-gap: 20px;
+	align-items: start;
+	
+  }
+  
+  .event {
+	font-size: 16px;
+  }
+  
+  .date,
+  .location {
+	font-size: 15px;
+	color: #333;
+  }
+  
+  strong {
+	font-weight: 700;
+  }
+  
